@@ -4,25 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-
     <title>Song Bird Quize</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo">
+      <div class="header-logo">
         <img src="./img/logo.gif" width="90" height="90" alt="Logo" />
       </div>
       <nav class="nav-header">
-        <a class="page-link" href="/#">Start Page</a>
-        <a class="page-link" href="/#">Quize Page</a>
-        <a class="page-link" href="/#">Result Page</a>
+        <a class="page-link" href="./index.html">Start Page</a>
+        <a class="page-link" href="../src/pages/quize/index.html">Quize Page</a>
+        <a class="page-link" href="../src/pages/result/index.html">Result Page</a>
       </nav>
       <h4>Score: <span class="score">4</span></h4>
     </header>
-
+    <div class="line"></div>
     <main class="main-page">
       <div class="main-page-audio">
         <p class="main-page-title">
@@ -34,7 +30,6 @@
           <a href="audio/music.mp3">Скачайте музыку</a>.
         </audio>
       </div>
-
       <div class="main-page-video">
         <p class="main-page-title">
           Click play and look at these beautiful birds!
@@ -50,9 +45,25 @@
         ></iframe>
       </div>
     </main>
-
-    <footer>
-      <div class="image"></div>
+    <div class="line"></div>
+    <footer class="footer">
+      <div class="footer-git-logo">
+        <a href="https://github.com/MarinaZai" class="link"
+          >GitHub: @MarinaZai</a
+        >
+      </div>
+      <div class="footer-year">2022 year</div>
+      <div class="footer-rs-logo">
+        <a href="https://rs.school/js/" class="link">
+          <img
+            src="https://rs.school/images/rs_school_js.svg"
+            width="70"
+            height="70"
+            alt="Logo"
+          />
+          Go to site! Start the learn!
+        </a>
+      </div>
     </footer>
   </body>
 </html>
