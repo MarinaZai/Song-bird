@@ -1,12 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Quize</h1>
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song Bird Quize</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img src="../../img/logo.gif" width="90" height="90" alt="Logo" />
+      </div>
+      <nav class="nav-header">
+        <a href="./index.html" class="page-link">Start Page</a>
+        <a href="./quize.html" class="page-link">Quize Page</a>
+        <a href="./result.html" class="page-link">Result Page</a>
+      </nav>
+      <h4>Score: <span class="score">0</span></h4>
+    </header>
+    <div class="line"></div>
+    <main class="quize-page">
+      <div class="quize-page-top">
+        <img src="../../img/unknown_bird.jpg" alt="Unknown Bird" class="top-image"/>
+        <div class="top-question">
+          <h3 class="top-question-title">******</h3>
+          <div class="line"></div>
+          <audio controls>
+            <source src="../../audio/main_page_audio.mp3" type="audio/mpeg" />
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </div>
+      </div>
+      <div class="quize-page-center">
+        <div class="center-left">
+          <ul class="item-list-left">
+            <li class="list-item">Ворон</li>
+            <li class="list-item">Журавль</li>
+            <li class="list-item">Ласточка</li>
+            <li class="list-item">Козодой</li>
+            <li class="list-item">Кукушка</li>
+            <li class="list-item">Синица</li>
+          </ul>
+        </div>
+        <div class="center-right">
+          Listen to the player! Select a bird from the list.
+        </div>
+      </div>
+      <div class="quize-page-bottom">
+        <button class="bottom-button">Next Question</button>
+      </div>
+    </main>
+    <div class="line"></div>
+    <footer class="footer">
+      <div class="footer-git-logo">
+        <a href="https://github.com/MarinaZai" class="link"
+          >GitHub: @MarinaZai</a
+        >
+      </div>
+      <div class="footer-year">2022 year</div>
+      <div class="footer-rs-logo">
+        <a href="https://rs.school/js/" class="link">
+          <img
+            src="https://rs.school/images/rs_school_js.svg"
+            width="70"
+            height="70"
+            alt="Logo"
+          />
+          Go to site! Start the learn!
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

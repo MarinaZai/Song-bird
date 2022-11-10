@@ -1,9 +1,10 @@
 body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   background-color: $back;
   color: $text;
   padding: 10px;
 }
+/* Main page */
 //header
 .header {
   display: flex;
@@ -58,14 +59,61 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-/* .footer-rs-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 .link {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: $text;
+}
+
+/* Quize Page */
+.quize-page {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.quize-page-top {
+  display: flex;
+  justify-content: space-around;
+  background-color: $miniback;
+  padding: 20px;
+}
+.top-question {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 15px;
+}
+.top-question-title {
+  font-size: 30px;
+}
+.quize-page-center {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.center-left {
+  background-color: $miniback;
+  padding: 20px;
+  flex-basis: 200px;
+}
+.list-item {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.center-right {
+  background-color: $miniback;
+  flex: 1;
+  font-size: 20px;
+  padding: 40px;
+}
+.bottom-button {
+background-color: $miniback;
+width: 100%;
+padding: 13px;
+border-width: 4px;
+border-style: ridge;
+color: $text;
 }
