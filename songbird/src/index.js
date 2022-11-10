@@ -1,5 +1,11 @@
 import './index.html';
+import './pages/quize/quize.html'
+import './pages/result/result.html'
+import './pages/train/train.html'
 import './index.scss';
+console.log('hello')
+
+
 /* import code from './img/code.png'
 import { mult, sum } from './modules/calc';
  */

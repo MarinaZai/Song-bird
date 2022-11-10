@@ -24,13 +24,13 @@ module.exports = {
     assetModuleFilename: 'assets/[name][ext]'
   },
   plugins: [
-/*     new HtmlWebpackPlugin({
+    /*  new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
     }), */
     new HtmlWebpackPlugin({
       inject: 'body',
-      template: './src/index.html',
-      chunks: ['index'],
+      template: path.resolve(__dirname, 'src', 'index.html'),
+      // chunks: ['index'],
       filename: 'index.html',
       minify: {
         removeComments: true,
@@ -38,16 +38,20 @@ module.exports = {
       }
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/quize/quize.html',
-      chunks: ['quize'],
+      template: path.resolve(__dirname, 'src/pages/quize', 'quize.html'),
+      // chunks: ['quize'],
       filename: 'quize.html',
     }),
     new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src/pages/train', 'train.html'),
+      // chunks: ['quize'],
+      filename: 'train.html',
+    }),
+    new HtmlWebpackPlugin({
       template: './src/pages/result/result.html',
-      chunks: ['result'],
+      // chunks: ['result'],
       filename: 'result.html',
     }),
-    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),
