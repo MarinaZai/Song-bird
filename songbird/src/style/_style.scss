@@ -165,3 +165,17 @@ body {
   width: 50%;
   display: none;
 }
+/* Train Page */
+.train-page {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.one_block {
+  width: 45%;
+  background-color: $miniback;
+  padding: 5px;
+}

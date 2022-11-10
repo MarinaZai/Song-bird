@@ -3,9 +3,10 @@ import './pages/quize/quize.html'
 import './pages/result/result.html'
 import './pages/train/train.html'
 import './index.scss';
+import { painTrainPage } from './modules/painTrainPage';
 console.log('hello')
 
-
+painTrainPage();
 /* import code from './img/code.png'
 import { mult, sum } from './modules/calc';
  */

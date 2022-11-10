@@ -1,4 +1,4 @@
-const birdsData = [
+export const birdsData = [
     [       
       {
         id: 1,
@@ -48,10 +48,9 @@ const birdsData = [
         image: 'https://live.staticflickr.com//65535//49366042493_c48c81d58d.jpg',
         audio: 'https://www.xeno-canto.org/sounds/uploaded/RFGQDPLDEC/XC518417-Kj%C3%B8ttmeis%20XC%20Helg%C3%B8ya%20Elias%20A.%20Ryberg20200108133922_079.mp3'
       }
-    ],
-    [
+    ,
       {
-        id: 1,
+        id: 7,
         name: 'Воробей',
         species: 'Passer domesticus',
         description: 'Воробьи являются самыми известными и узнаваемыми пернатыми. Их легко узнать по пестрому оперению и задорному чириканью. Воробьи относятся к синатропному виду — они селятся поблизости к человеческому жилищу.',
@@ -59,7 +58,7 @@ const birdsData = [
         audio: 'https://www.xeno-canto.org/sounds/uploaded/CXFHOPIVAS/XC503224-191020_0134.mp3'
       },
       {
-        id: 2,
+        id: 8,
         name: 'Грач',
         species: 'Corvus frugilegus',
         description: 'Грачи очень умные и сообразительные птицы. С помощью клюва они создают и используют простейшие орудия. У грачей развит рефлекс на звуки трактора. Услышав «тарахтение», они летят на звук – трактор пашет землю, значит, в этом месте много корма.',
@@ -67,7 +66,7 @@ const birdsData = [
         audio: 'https://www.xeno-canto.org/sounds/uploaded/RLRHCUIPIY/XC512540-gawron%20Suble%2019.12.19%20%2012.35.mp3'
       },
       {
-        id: 3,
+        id: 9,
         name: 'Галка',
         species: 'Coloeus monedula',
         description: 'Слово «галка» произошло из старославянского языка и переводится как «чёрный». Этим словом часто называют воронов или других черных птиц. Латинское название галки «monedula» связывают со словами монета за любовь птицы к блестящим и ярким вещам.',
@@ -75,7 +74,7 @@ const birdsData = [
         audio: 'https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC510498-Coloeus%20monedula_2019.11.13_11.55_01.mp3'
       },
       {
-        id: 4,
+        id: 10,
         name: 'Певчий дрозд',
         species: 'Turdus philomelos',
         description: 'Дрозд — лучший певец из отряда воробьиных. Песня состоит только из красивых звучных свистов и коротких трелей. Чаще всего её можно услышать в утреннее и вечернее время. Поют дрозды в течении всего периода гнездования.',
@@ -83,7 +82,7 @@ const birdsData = [
         audio: 'https://www.xeno-canto.org/sounds/uploaded/BLMSIUFTFU/XC513326-190704_1146_TF-Glogow.mp3'
       },
       {
-        id: 5,
+        id: 11,
         name: 'Сорока',
         species: 'Pica pica',
         description: 'Сорока очень трудолюбивая птица. Она строит до восьми гнёзд, а потом выбирает из них самое лучшее. Вход в гнездо сорок всегда обращен на юг, чтобы в жилище было теплее. Сороки являются единственными птицами, которые узнают себя в зеркале.',
@@ -91,7 +90,7 @@ const birdsData = [
         audio: 'https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC500868-Pica%20pica2019.08.23_09.18_02.mp3'
       },
       {
-        id: 6,
+        id: 12,
         name: 'Сойка',
         species: 'Garrulus glandarius',
         description: 'Когда сойка волнуется, хохолок на её голове взъерошивается. Птица старается создать устрашающее зрелище. Сойки умеют имитировать голоса других птиц, животных и звуки, которые создает человек. На зиму они делают большие запасы желудей и орехов.',
