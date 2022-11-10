@@ -24,9 +24,30 @@ module.exports = {
     assetModuleFilename: 'assets/[name][ext]'
   },
   plugins: [
-    new HtmlWebpackPlugin({
+/*     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
+    }), */
+    new HtmlWebpackPlugin({
+      inject: 'body',
+      template: './src/index.html',
+      chunks: ['index'],
+      filename: 'index.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/quize/quize.html',
+      chunks: ['quize'],
+      filename: 'quize.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/result/result.html',
+      chunks: ['result'],
+      filename: 'result.html',
+    }),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),
