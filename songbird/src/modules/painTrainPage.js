@@ -11,6 +11,9 @@ export const painTrainPage = () => {
       newImage.src = array_item.image;
       newImage.alt = array_item.name;
       newImage.classList.add("picture");
+      const audio = document.createElement("AUDIO");
+      audio.setAttribute("src", `${array_item.audio}`);
+      audio.setAttribute("controls", "controls");
       const newDescriptionImage = document.createElement("div");
       newDescriptionImage.classList.add("description_image");
       const newTextNamePet = document.createElement("div");
@@ -23,6 +26,7 @@ export const painTrainPage = () => {
       newDescriptionPet.innerHTML = array_item.description;
       newDescriptionPet.classList.add("description_pet");
       newOneBlock.appendChild(newImage);
+      newOneBlock.appendChild(audio)
       newOneBlock.appendChild(newDescriptionImage);
       newDescriptionImage.appendChild(newTextNamePet);
       newDescriptionImage.appendChild(newTextName);

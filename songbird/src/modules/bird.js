@@ -37,7 +37,7 @@ export const birdsData = [
         name: 'Кукушка',
         species: 'Cuculus canorus',
         description: 'Кукушку назвали так из-за особенностей ее песен. Звонкое «ку-ку» не спутать ни с какой другой птицей. Кукушки не строят гнезда, их потомство выращивают другие виды пернатых, которым кукушки подбрасывают свои яйца.',
-        image: 'https://live.staticflickr.com/65535/48377838151_e15f430ec1.jpg',
+        image: 'https://7factov.ru/wp-content/uploads/2020/03/9717e5cf185c1e7dd55196a882903601-716x477.jpg',
         audio: 'https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC501461-190616_08.13h_koekoek_brabantse%20biesbosch%20jantjesplaat_roep_1%20ex_ad%20m_ter%20plaatse%20zingend_gezien_.mp3'
       },
       {
@@ -45,7 +45,7 @@ export const birdsData = [
         name: 'Синица',
         species: 'Parus major',
         description: 'В щебетании синиц различают более 40 различных звуковых сочетаний. Поют они практически круглый год, немного затихая только зимой. Синицы настоящие санитары леса. Одна пара синиц в период гнездования оберегает от вредителей десятки деревьев.',
-        image: 'https://live.staticflickr.com//65535//49366042493_c48c81d58d.jpg',
+        image: 'https://ptici.info/assets/components/phpthumbof/cache/lazorevka.18176db1094c57fa245ab89941e7a0fb.jpg',
         audio: 'https://www.xeno-canto.org/sounds/uploaded/RFGQDPLDEC/XC518417-Kj%C3%B8ttmeis%20XC%20Helg%C3%B8ya%20Elias%20A.%20Ryberg20200108133922_079.mp3'
       }
     ,
@@ -278,7 +278,7 @@ export const birdsData = [
         name: 'Пеликан',
         species: 'Pelecanus',
         description: 'Пеликаны — обитатели морей и рек. Ходят они неуклюже, но хорошо летают и плавают. Питаются в основном рыбой, устраивают коллективные охоты — выстроившись полукругом хлопают по воде крыльями и клювами и вытесняют напуганную рыбу на мелководье.',
-        image: 'https://live.staticflickr.com/65535/49159147156_dcbbb5c12a.jpg',
+        image: 'https://st2.depositphotos.com/7508786/10537/i/450/depositphotos_105376874-stock-photo-white-pelican-in-flight.jpg',
         audio: 'https://www.xeno-canto.org/sounds/uploaded/XAMHIHFTZG/XC331138-call1.mp3'
       },
       {
