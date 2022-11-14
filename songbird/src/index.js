@@ -4,10 +4,14 @@ import './pages/result/result.html'
 import './pages/train/train.html'
 import './index.scss';
 import { painTrainPage } from './modules/painTrainPage';
-import { shuffle } from './modules/shuffleAray';
+import { shuffle } from './modules/shuffleArray';
 import birdsData from './modules/bird';
 import { quizeItem } from './modules/quizeItem';
+import { quizeAudio } from './modules/quizeAudio';
 
 painTrainPage()
 quizeItem(shuffle(birdsData))
+quizeAudio()
+
+
 

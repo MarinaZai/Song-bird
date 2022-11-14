@@ -10,6 +10,6 @@ export function shuffle(array) {
       array[currentIndex],
     ];
   }
-
-  return array.slice(0, 5);
+  return array.slice(0, 6);
 }
+
