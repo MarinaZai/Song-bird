@@ -8,10 +8,12 @@ import { shuffle } from './modules/shuffleArray';
 import birdsData from './modules/bird';
 import { quizeItem } from './modules/quizeItem';
 import { quizeAudio } from './modules/quizeAudio';
+import { onClickList } from './modules/onClickList';
 
 painTrainPage()
 quizeItem(shuffle(birdsData))
 quizeAudio()
+onClickList()
 
 
 

@@ -21,6 +21,6 @@ export const quizeAudio = () => {
   const audio = document.createElement("AUDIO");
   audio.setAttribute("src", `${element}`);
   audio.setAttribute("controls", "controls");
-
+  audio.classList.add("audio-quize");
   topQuestion.appendChild(audio);
 };
