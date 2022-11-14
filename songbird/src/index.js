@@ -4,17 +4,10 @@ import './pages/result/result.html'
 import './pages/train/train.html'
 import './index.scss';
 import { painTrainPage } from './modules/painTrainPage';
-console.log('hello')
+import { shuffle } from './modules/shuffleAray';
+import birdsData from './modules/bird';
+import { quizeItem } from './modules/quizeItem';
 
-painTrainPage();
-/* import code from './img/code.png'
-import { mult, sum } from './modules/calc';
- */
-/* const imgWrap = document.querySelector('.img');
-const img = new Image();
-img.src = code;
-img.width = 700;
-imgWrap.append(img);
+painTrainPage()
+quizeItem(shuffle(birdsData))
 
-console.log(mult(3, 4));
-console.log(sum(3, 4)); */

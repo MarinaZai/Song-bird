@@ -2,9 +2,12 @@ import birdsData from "./bird";
 
 export const painTrainPage = () => {
   const trainPage = document.querySelector(".train-page");
-  birdsData.forEach((item, index) => {
-    item.forEach((array_item, index) => {
-      //console.log(array_item)
+  if(!trainPage) {
+    return
+  }
+  console.log(trainPage)
+  birdsData.forEach((array_item, index) => {
+   /*  item.forEach((array_item, index) => { */
       const newOneBlock = document.createElement("div");
       newOneBlock.classList.add("one_block");
       const newImage = document.createElement("img");
@@ -20,7 +23,7 @@ export const painTrainPage = () => {
       newTextNamePet.innerHTML = array_item.name;
       newTextNamePet.classList.add("name_bird");
       const newTextName = document.createElement("div");
-      newTextName.innerHTML = array_item.species;
+      newTextName.innerHTML = `(${array_item.species})`;
       newTextName.classList.add("name");
       const newDescriptionPet = document.createElement("div");
       newDescriptionPet.innerHTML = array_item.description;
@@ -34,5 +37,5 @@ export const painTrainPage = () => {
       trainPage.appendChild(newOneBlock);
       return newOneBlock;
     });
-  });
+  /* }) */;
 };
