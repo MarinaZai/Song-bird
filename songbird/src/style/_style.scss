@@ -107,26 +107,29 @@ audio {
   min-height: 150px;
   padding-right: 17px;
 }
+.center-right-image {
+width: 100%;
+}
 .quize-page-center {
   display: flex;
   justify-content: space-around;
-  gap: 30px;
+  gap: 16px;
 }
 .center-left {
   background-color: $miniback;
   flex-basis: 180px;
 }
 .list-item {
-  font-size: 20px;
-  padding: 10px;
+  font-size: 18px;
+  padding: 8px;
   cursor: pointer;
 }
 
 .center-right {
   background-color: $miniback;
   flex: 1;
-  font-size: 20px;
-  padding: 40px;
+  font-size: 16px;
+  padding: 20px;
 }
 .bottom-button {
   background-color: $miniback;
