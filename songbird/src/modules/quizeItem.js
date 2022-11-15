@@ -14,6 +14,7 @@ export const quizeItem = (array) => {
 
 listBlock.setAttribute("audio", array_item.audio)
 
+listBlock.setAttribute("image", array_item.image)
     //console.log(listBlock)
     return listBlock;
   });
