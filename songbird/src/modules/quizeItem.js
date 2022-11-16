@@ -6,6 +6,7 @@ export const quizeItem = (array) => {
   if (!blokItem) {
     return;
   }
+  blokItem.innerHTML = ''
   array.forEach((array_item, index) => {
     //console.log(array_item)
     const listBlock = document.createElement("li");
@@ -13,11 +14,11 @@ export const quizeItem = (array) => {
     listBlock.innerHTML = array_item.name;
     blokItem.appendChild(listBlock);
 
-listBlock.setAttribute("audio", array_item.audio)
-listBlock.setAttribute("species", array_item.species)
-listBlock.setAttribute("description", array_item.description)
-listBlock.setAttribute("image", array_item.image)
+    listBlock.setAttribute("audio", array_item.audio);
+    listBlock.setAttribute("species", array_item.species);
+    listBlock.setAttribute("description", array_item.description);
+    listBlock.setAttribute("image", array_item.image);
     //console.log(listBlock)
-    return listBlock;
+    // return listBlock;
   });
 };
