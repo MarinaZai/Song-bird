@@ -7,18 +7,12 @@ export const onClickList = () => {
   const centerRightBlock = document.querySelector(".center-right");
 
   let attemptCount = 0;
-  score.innerHTML = 0;
 
   [].forEach.call(liItem, function (el) {
-    //console.log(el);
     el.onclick = function (e) {
       attemptCount++;
-      console.log(attemptCount);
-
       let audioQuizeSrc = audioQuize.getAttribute("src");
-      //console.log(audioQuizeSrc);
       let valueLiAudio = e.target.getAttribute("audio");
-      //console.log(valueLiAudio);
       let imageSrc = e.target.getAttribute("image");
       let name = e.target.innerHTML;
       let english = e.target.getAttribute("species");
@@ -45,7 +39,6 @@ export const onClickList = () => {
         const englishName = document.createElement("span");
         englishName.classList.add("english-name");
         englishName.innerHTML = ` (${english})`;
-        //console.log(englishName);
 
         const audio = document.createElement("AUDIO");
         audio.setAttribute("src", `${valueLiAudio}`);
@@ -63,32 +56,26 @@ export const onClickList = () => {
         centerRightFullDescription.appendChild(centerRightDescription);
 
         switch (attemptCount) {
-            case 1:
-              console.log("5")
-              score.innerHTML = 5;
-              break;
-            case 2:
-              console.log("4")
-              score.innerHTML = 4;
-              break;
-            case 3:
-              console.log("3")
-              score.innerHTML = 3;
-              break;
-            case 4:
-              console.log("2")
-              score.innerHTML = 2;
-              break;
-            case 5:
-              console.log("1")
-              score.innerHTML = 1;
-              break
-            case 6:
-                score.innerHTML = 0;
-              console.log("0")
-              break;
-          }
-          
+          case 1:
+            score.innerHTML = +score.innerHTML + 5;
+            break;
+          case 2:
+            score.innerHTML = +score.innerHTML + 4;
+            break;
+          case 3:
+            score.innerHTML = +score.innerHTML + 3;
+            break;
+          case 4:
+            score.innerHTML = +score.innerHTML + 2;
+            break;
+          case 5:
+            score.innerHTML = +score.innerHTML + 1;
+            break;
+          case 6:
+            score.innerHTML = +score.innerHTML + 0;
+            break;
+        }
+        //console.log(score.innerHTML);
       } else {
         el.style.color = "red";
 
@@ -109,7 +96,6 @@ export const onClickList = () => {
         const englishName = document.createElement("span");
         englishName.classList.add("english-name");
         englishName.innerHTML = ` (${english})`;
-        //console.log(englishName);
 
         const audio = document.createElement("AUDIO");
         audio.setAttribute("src", `${valueLiAudio}`);

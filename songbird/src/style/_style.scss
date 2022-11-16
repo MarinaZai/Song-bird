@@ -107,8 +107,8 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
   font-size: 30px;
 }
 .top-image {
-  min-width: 140px;
-  min-height: 140px;
+  max-width: 140px;
+  max-height: 140px;
   border-color: #e1a5a5;
   border: 3px solid;
   border-radius: 5%;
@@ -195,7 +195,7 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
   color: $text;
 }
 .result-winner {
-  display: flex;
+  //display: flex;
   flex-direction: column;
   background-color: $miniback;
   width: 50%;

@@ -12,12 +12,10 @@ export const quizeAudio = () => {
     });
   };
   createArray();
-  //console.log(array);
 
   const topQuestion = document.querySelector(".top-question");
   let element = getRandomArrayElement(array);
-  //console.log(element)
- 
+
   const audio = document.createElement("AUDIO");
   audio.setAttribute("src", `${element}`);
   audio.setAttribute("controls", "controls");
