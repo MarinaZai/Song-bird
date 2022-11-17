@@ -8,7 +8,7 @@ import { shuffle } from "./shuffleArray";
 export const onClickButton = () => {
   const buttonNextQuestion = document.querySelector(".bottom-button");
   const score = document.querySelector(".score");
-
+ 
   let pathClick = 0;
 
   buttonNextQuestion.onclick = function (e) {
@@ -20,13 +20,12 @@ export const onClickButton = () => {
     quizeItem(shuffle(birdsData));
     quizeAudio();
     onClickList();
+    localStorage.setItem('saveScore', `${saveScore}`);
     if (pathClick === 6) {
       if (saveScore === 30) {
-        console.log("winner")
         location = "result.html?isWin=true";
       } else {
-        console.log("luzer")
-        location = "result.html";
+        location = "result.html?isWin=false";
       }
     }
   };
