@@ -22,6 +22,8 @@ export const onClickList = () => {
         nameRigthBird.innerHTML = `${name}`;
         el.style.color = "green";
 
+        const audioRight = new Audio ("../audio/properly.mp3")
+        audioRight.play()
         const centerRightImage = document.createElement("img");
         centerRightImage.src = imageSrc;
         centerRightImage.alt = name;
@@ -78,6 +80,9 @@ export const onClickList = () => {
         //console.log(score.innerHTML);
       } else {
         el.style.color = "red";
+
+        const audioNotProperly= new Audio ("../audio/not-properly.mp3")
+        audioNotProperly.play()
 
         const centerRightImage = document.createElement("img");
         centerRightImage.src = imageSrc;

@@ -114,6 +114,20 @@ module.exports = {
         type: 'asset/resource',
       },
       {
+        test: /\.(mp3|wav)$/,
+        use: [
+            {
+                loader: 'file-loader',
+                options: {                            
+                    name:'[name].[ext]',                            
+                    outputPath: 'audio/',
+                    publicPath: 'audio/',
+                    useRelativePaths: true
+                }
+            }
+        ]
+      },
+      {
         test: /\.m?js$/i,
         exclude: /(node_modules|bower_components)/,
         use: {
