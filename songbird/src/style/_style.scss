@@ -24,18 +24,21 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
 }
 .header-logo-img {
   border-color: $text;
-  border: 3px solid;
+  border: 1px solid;
   border-radius: 50%;
 }
 .nav-header {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  padding-right: 5px;
+  gap: 5px;
+  padding-right: 0px;
+}
+.score-text {
+  font-size: 14px;
 }
 .page-link {
   color: $text;
-  font-size: 16px;
+  font-size: 15px;
 }
 .line {
   border-bottom: 3px solid $text;
@@ -186,9 +189,12 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
   font-size: 20px;
   padding: 40px;
 }
+.a-again-btn {
+  width: 50%;
+}
 .again-btn {
   background-color: $miniback;
-  width: 50%;
+  width: 100%;
   padding: 13px;
   border-width: 4px;
   border-style: ridge;

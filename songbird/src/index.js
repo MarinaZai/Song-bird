@@ -31,7 +31,7 @@ if(location.pathname === '/result.html' && location.search.split('?')[1] === 'is
     resultStartAgain.style.display = "none"
 }
 if(location.pathname === '/result.html' && location.search.split('?')[1] === 'isWin=false') {
-    resultScore.innerHTML = `Your finall score: ${a}`
+    resultScore.innerHTML = `Ваш результат: ${a}`
 }
 
 painTrainPage()
