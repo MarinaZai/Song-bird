@@ -10,12 +10,20 @@ import { quizeItem } from './modules/quizeItem';
 import { quizeAudio } from './modules/quizeAudio';
 import { onClickList } from './modules/onClickList';
 import { onClickButton } from './modules/onClickButton';
+import { onClickButtonForRestart } from './modules/onClickButtonForRestart';
+
 const score = document.querySelector(".score");
 
 const winnerPage = document.querySelector(".result-winner");
 const resultStartAgain = document.querySelector(".result-start-again")
 const resultScore = document.querySelector(".result-score")
+const buttonNextQuestion = document.querySelector(".bottom-button");
 const a = localStorage.getItem('saveScore');
+localStorage.setItem('isFinishedGame', false);
+const button = document.querySelector(".again-btn")
+if(buttonNextQuestion) {
+    buttonNextQuestion.disabled = true
+}
 
 
 if(location.pathname === '/result.html' && location.search.split('?')[1] === 'isWin=true') {
@@ -31,6 +39,9 @@ quizeItem(shuffle(birdsData))
 quizeAudio()
 onClickList()
 onClickButton()
+
+onClickButtonForRestart(button)
+
 
 let scoreResult = 0;
 score.innerHTML = scoreResult;

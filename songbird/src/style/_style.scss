@@ -193,6 +193,7 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
   border-width: 4px;
   border-style: ridge;
   color: $text;
+  cursor: pointer;
 }
 .result-winner {
   //display: flex;

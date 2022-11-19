@@ -5,7 +5,7 @@ export const onClickList = () => {
   const nameRigthBird = document.querySelector(".top-question-title");
   const score = document.querySelector(".score");
   const centerRightBlock = document.querySelector(".center-right");
-
+  const buttonNextQuestion = document.querySelector(".bottom-button");
   let attemptCount = 0;
 
   [].forEach.call(liItem, function (el) {
@@ -18,6 +18,7 @@ export const onClickList = () => {
       let english = e.target.getAttribute("species");
       let description = e.target.getAttribute("description");
       if (audioQuizeSrc === valueLiAudio) {
+        localStorage.setItem('isFinishedGame', true);
         imageRightBird.setAttribute("src", `${imageSrc}`);
         nameRigthBird.innerHTML = `${name}`;
         el.style.color = "green";
@@ -79,10 +80,12 @@ export const onClickList = () => {
         }
         //console.log(score.innerHTML);
       } else {
-        el.style.color = "red";
-
         const audioNotProperly= new Audio ("../audio/not-properly.mp3")
-        audioNotProperly.play()
+        const isFinishedGame = localStorage.getItem('isFinishedGame');
+        if(isFinishedGame !== 'true') {
+          el.style.color = "red";
+          audioNotProperly.play()
+        }
 
         const centerRightImage = document.createElement("img");
         centerRightImage.src = imageSrc;
@@ -117,6 +120,8 @@ export const onClickList = () => {
         centerRightFullDescription.appendChild(audio);
         centerRightFullDescription.appendChild(centerRightDescription);
       }
+      const isFinishedGame = localStorage.getItem('isFinishedGame');
+      buttonNextQuestion.disabled = isFinishedGame !== 'true'
     };
   });
 };
