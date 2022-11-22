@@ -27,9 +27,9 @@ export const onClickButton = (isFinishedGame) => {
     buttonNextQuestion.disabled = isFinishedGame !== true
     if (pathClick === 6) {
       if (saveScore === 30) {
-        location = "result.html?isWin=true";
+        location = "marinazai-JSFE2022Q3/result.html?isWin=true";
       } else {
-        location = "result.html?isWin=false";
+        location = "marinazai-JSFE2022Q3/result.html?isWin=false";
       }
     }
   };

@@ -23,7 +23,7 @@ export const onClickList = () => {
         nameRigthBird.innerHTML = `${name}`;
         el.style.color = "green";
 
-        const audioRight = new Audio ("../audio/properly.mp3")
+        const audioRight = new Audio ("https://cdn.pixabay.com/download/audio/2021/08/04/audio_473a42432c.mp3?filename=tada-fanfare-a-6313.mp3")
         audioRight.play()
         const centerRightImage = document.createElement("img");
         centerRightImage.src = imageSrc;
@@ -80,7 +80,7 @@ export const onClickList = () => {
         }
         //console.log(score.innerHTML);
       } else {
-        const audioNotProperly= new Audio ("../audio/not-properly.mp3")
+        const audioNotProperly= new Audio ("https://cdn.pixabay.com/download/audio/2022/03/10/audio_e4e7943871.mp3?filename=windows-error-sound-effect-35894.mp3")
         const isFinishedGame = localStorage.getItem('isFinishedGame');
         if(isFinishedGame !== 'true') {
           el.style.color = "red";
