@@ -1,2 +1,9 @@
-# marinazai-JSFE2022Q3
-Private repository for @marinazai
+# Song-bird
+
+### Individual educational project /
+
+### Deploy: https://bird-songs-check.netlify.app/ \
+    
+### Stack: JS,Webpack,SASS
+
+
